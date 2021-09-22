@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Oven of Happiness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!----------header------------>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Acount</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+<!--------------single product details-------------------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/seasonal gallery summer- 1.jpg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/seasonal gallery summer- 1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/seasonal gallery summer- 2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/seasonal gallery summer- 3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/seasonal gallery summer- 4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p> Home/ Other</p>
+                <h1>Strawberry Cheesecake</h1>
+                <h4>$8.00-$18.00</h4>
+                <select>
+                    <option> Select Portion </option>
+                    <option> 1/2 cake </option>
+                    <option> 1 cake </option>
+                    <option> 2 cake </option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="button"> Add to Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p> A summer delight!</p>
+            </div>
+        </div>
+    </div>    
+
+
+<!------footer-------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo-white.png">
+                <p>Give yourself a treat, while you give someone a good life.</p>
+            </div>
+
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Blog Posts</li>
+                    <li>Shipping Information</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Follow Oven of Happiness</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021- Oven of Happiness</p>
+    </div>
+</div>
+
+<!------js for toggle menu---------->
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+<!-------js for product gallery------->
+    <script>
+        var productImg= document.getElementById("productImg")
+        var smallImg= document.getElementsByClassName("small-img")
+
+        smallImg[0].onclick= function(){
+            productImg.src= smallImg[0].src
+        }
+        smallImg[1].onclick= function(){
+            productImg.src= smallImg[1].src
+        }
+        smallImg[2].onclick= function(){
+            productImg.src= smallImg[2].src
+        }
+        smallImg[3].onclick= function(){
+            productImg.src= smallImg[3].src
+        }
+    </script>
+</body>
+</html

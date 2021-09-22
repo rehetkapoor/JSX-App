@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oven of Happiness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!----------header------------>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Acount</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Make someone's <br>day special!</h1>
+                    <p>Give yourself a treat, <br> while you give someone a good life.</p>
+                    <a href="products.html" class="button">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------featured products---------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details 1.html"><img src="images/product-1.png"></a>
+                <a href="product-details 1.html"><h4>Marble Cake</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$5.00-$14.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 2.html"><img src="images/product-2.jpg"></a>
+                <a href="product-details 2.html"><h4>Eggless Chocolate Cake</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5.00-$14.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 3.html"><img src="images/product-3.png"></a>
+                <a href="product-details 3.html"><h4>Vegan White Chocolate Cookies</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$2.00-$8.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 4.html"><img src="images/product-4.jpg"></a>
+                <a href="product-details 4.html"><h4>Double Chocolate Chip Muffins</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$8.00-$18.00</p>
+            </div>
+        </div>
+
+<!------latest products------->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details 5.html"><img src="images/product-5.jpg"></a>
+                <a href="product-details 5.html"><h4>Red Velvet Cake</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5.00-$14.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 6.html"><img src="images/product-6.jpg"></a>
+                <a href="product-details 6.html"><h4>Chcolate Cip Cookies</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.00-$8.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 7.html"><img src="images/product-7.jpg"></a>
+                <a href="product-details 7.html"><h4>Sugar Cookies</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$3.00-$12.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 8.html"><img src="images/product-8.jpg"></a>
+                <a href="product-details 8.html"><h4>Brownies</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$8.00-$18.00</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details 9.html"><img src="images/product-9.jpg"></a>
+                <a href="product-details 9.html"><h4>Lemon Tart</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$8.00-$20.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 10.html"><img src="images/product-10.jpg"></a>
+                <a href="product-details 10.html"><h4>Brownie Trifle Pudding</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5.00-$14.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 11.html"><img src="images/product-11.jpg"></a>
+                <a href="product-details 11.html"><h4>Lemon Cake</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5.00-$14.00</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details 12.html"><img src="images/product-12.jpg"></a>
+                <a href="product-details 12.html"><h4>Vannilla Cupcakes</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$8.00-$18.00</p>
+            </div>
+        </div>      
+    </div>
+
+<!---------Sesonals---------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/summer.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Seasonally Avalible on Oven of Happiness</p>
+                    <h1>Strawberry Cheesecake</h1>
+                    <small>This delicious, mouth melting Strawberry Cheesecake with refresh you no matter the weather! Only avalible from June 21st - September 22nd</small>
+                    <br>
+                    <a href="seasonal dessert.html" class="button">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------testimonials--------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    <div class="rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h3> Name </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    <div class="rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h3> Name </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    <div class="rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h3> Name </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------footer-------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col-1">
+                    <img src="images/logo-white.png">
+                    <p>Give yourself a treat, while you give someone a good life.</p>
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Blog Posts</li>
+                        <li>Shipping Information</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Follow Oven of Happiness</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021- Oven of Happiness</p>
+        </div>
+    </div>
+
+<!------js for toggle menu---------->
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html
